@@ -30,19 +30,85 @@ img {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(to bottom, #FFC600 70%, #359654 70%);
   text-align: center;
-  padding-bottom: 40px;
 }
 
-.hero-content {
-  display: flex;
-  justify-content: center;
+.hero-main {
+  position: relative;
+  background-color: #FFC600;
+  height: 700px;
+  overflow: visible;
 }
 
-.hero-image {
-  max-width: 640px;
-  width: 100%;
+.hero-title {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-text {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-phone {
+  position: absolute;
+  top: 70px;
+  left: 30%;
+  transform: translateX(-70%);
+  max-width: 300px;
+}
+
+.hero-cat {
+  position: absolute;
+  bottom: -50px;
+  right: 50%;
+  transform: translateX(80%);
+  max-width: 250px;
+  z-index: 2;
+}
+
+.hero-hand-l {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(20%);
+  max-width: 80px;
+  z-index: 3;
+}
+
+.hero-hand-r {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(140%);
+  max-width: 80px;
+  z-index: 3;
+}
+
+.hero-gift {
+  position: absolute;
+  bottom: -30px;
+  right: 50%;
+  transform: translateX(80%);
+  max-width: 120px;
+  z-index: 1;
+}
+
+.hero-series {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-150%);
+  max-width: 150px;
+}
+
+.hero-bottom {
+  background-color: #359654;
+  padding: 80px 20px 30px;
 }
 
 .hero-cta {
@@ -197,6 +263,26 @@ img {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+  .hero-image {
+    max-width: 400px;
+  }
+
+  .hero-cat {
+    max-width: 280px;
+  }
+
+  .hero-right {
+    margin-top: -60px;
+  }
+
+  .point-number {
+    font-size: 56px;
+  }
+
+  .point-amount {
+    font-size: 24px;
+  }
+
   .section-title,
   .cta-title {
     font-size: 32px;
@@ -240,6 +326,31 @@ img {
 }
 
 @media (max-width: 480px) {
+  .hero-image {
+    max-width: 300px;
+  }
+
+  .hero-cat {
+    max-width: 200px;
+  }
+
+  .hero-right {
+    margin-top: -40px;
+  }
+
+  .point-number {
+    font-size: 48px;
+  }
+
+  .point-amount {
+    font-size: 20px;
+  }
+
+  .point-label {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
   .section-title,
   .cta-title {
     font-size: 24px;
