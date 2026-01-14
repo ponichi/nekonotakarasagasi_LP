@@ -1,0 +1,260 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.6;
+  color: #121212;
+  background-color: #FFC600;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #FFC600;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image {
+  max-width: 640px;
+  width: 100%;
+}
+
+.hero-cta {
+  padding: 30px 20px;
+}
+
+.cta-text {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #121212;
+}
+
+.store-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.store-button img {
+  height: 50px;
+  width: auto;
+}
+
+/* App Description Section */
+.app-description {
+  background-color: #FFFFFF;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.description-banner {
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.flow-image {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Gift Points Section */
+.gift-points {
+  background-color: #FFC600;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.gift-banner {
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.logo-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.partner-logo {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+/* Campaign Section */
+.campaign {
+  background-color: #FFC600;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #121212;
+  margin-bottom: 40px;
+}
+
+.campaign-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.campaign-card {
+  max-width: 610px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* CTA Section */
+.cta-section {
+  background-color: #FFC600;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.cta-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #121212;
+  margin-bottom: 40px;
+}
+
+.cta-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.qr-code img {
+  width: 150px;
+  height: 150px;
+}
+
+.cta-buttons {
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  background-color: #FFC600;
+  padding: 40px 0 60px;
+  text-align: center;
+}
+
+.footer-cat {
+  max-width: 400px;
+  margin: 0 auto 30px;
+}
+
+.disclaimer {
+  font-size: 14px;
+  color: #000000;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .section-title,
+  .cta-title {
+    font-size: 32px;
+  }
+
+  .cta-text {
+    font-size: 16px;
+  }
+
+  .store-button img {
+    height: 45px;
+  }
+
+  .partner-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .logo-grid {
+    gap: 20px;
+  }
+
+  .cta-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .qr-code img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .footer-cat {
+    max-width: 280px;
+  }
+
+  .disclaimer {
+    font-size: 12px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title,
+  .cta-title {
+    font-size: 24px;
+  }
+
+  .store-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .store-button img {
+    height: 40px;
+  }
+
+  .partner-logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .campaign-card {
+    border-radius: 10px;
+  }
+}
