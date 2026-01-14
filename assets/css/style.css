@@ -30,170 +30,160 @@ img {
 
 /* Hero Section */
 .hero {
+  background-color: #FFC600;
   text-align: center;
 }
 
-.hero-main {
-  position: relative;
-  background-color: #FFC600;
-  height: 700px;
-  overflow: visible;
-}
-
-.hero-title {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.hero-text {
-  position: absolute;
-  top: 100px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.hero-phone {
-  position: absolute;
-  top: 70px;
-  left: 30%;
-  transform: translateX(-70%);
-  max-width: 300px;
-}
-
-.hero-cat {
-  position: absolute;
-  bottom: -50px;
-  right: 50%;
-  transform: translateX(80%);
-  max-width: 250px;
-  z-index: 2;
-}
-
-.hero-hand-l {
-  position: absolute;
-  bottom: 0;
-  right: 50%;
-  transform: translateX(20%);
-  max-width: 80px;
-  z-index: 3;
-}
-
-.hero-hand-r {
-  position: absolute;
-  bottom: 0;
-  right: 50%;
-  transform: translateX(140%);
-  max-width: 80px;
-  z-index: 3;
-}
-
-.hero-gift {
-  position: absolute;
-  bottom: -30px;
-  right: 50%;
-  transform: translateX(80%);
-  max-width: 120px;
-  z-index: 1;
-}
-
-.hero-series {
-  position: absolute;
-  bottom: 50px;
-  left: 50%;
-  transform: translateX(-150%);
-  max-width: 150px;
-}
-
-.hero-bottom {
-  background-color: #359654;
-  padding: 80px 20px 30px;
-}
-
-.hero-cta {
-  background-color: #359654;
-  padding: 30px 20px;
-}
-
-.cta-text {
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 20px;
-  color: #121212;
-}
-
-.hero-cta .cta-text {
-  color: #FFFFFF;
-}
-
-.store-buttons {
+.hero-content {
   display: flex;
   justify-content: center;
-  gap: 16px;
+}
+
+.hero-image {
+  max-width: 1280px;
+  width: 100%;
+}
+
+/* Download CTA Section */
+.download-cta {
+  background-color: #359654;
+  padding: 0 20px 40px;
+}
+
+.cta-card {
+  background-color: #FFFFFF;
+  border-radius: 40px;
+  padding: 50px 10px;
+  max-width: 1224px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0px 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cta-title {
+  font-size: 50px;
+  font-weight: 700;
+  color: #121212;
+  margin-bottom: 40px;
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
   flex-wrap: wrap;
+  padding: 10px;
+}
+
+.qr-code {
+  width: 252px;
+  height: 252px;
+  border-radius: 50px;
 }
 
 .store-button img {
-  height: 50px;
+  height: 128px;
   width: auto;
 }
 
 /* App Description Section */
 .app-description {
-  background-color: #FFFFFF;
-  padding: 60px 0;
+  background-color: #FDFDFD;
+  padding: 80px 30px;
   text-align: center;
 }
 
+.section-intro {
+  max-width: 648px;
+  margin: 0 auto 60px;
+}
+
 .description-banner {
-  max-width: 800px;
-  margin: 0 auto 40px;
+  max-width: 930px;
+  margin: 0 auto 60px;
 }
 
 .flow-image {
-  max-width: 600px;
+  max-width: 1138px;
+  margin: 0 auto;
+}
+
+/* Arrow Decoration */
+.arrow-decoration {
+  width: 0;
+  height: 0;
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+  border-top: 60px solid #FDFDFD;
   margin: 0 auto;
 }
 
 /* Gift Points Section */
 .gift-points {
   background-color: #FFC600;
-  padding: 60px 0;
+  padding: 110px 5px 110px;
   text-align: center;
 }
 
 .gift-banner {
-  max-width: 800px;
-  margin: 0 auto 40px;
+  max-width: 1098px;
+  margin: 0 auto 80px;
 }
 
 .logo-grid {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 70px;
   flex-wrap: wrap;
+  margin-bottom: 80px;
 }
 
 .partner-logo {
-  width: 150px;
-  height: 150px;
+  width: 332px;
+  height: 332px;
   object-fit: contain;
+}
+
+.disclaimer {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  max-width: 1114px;
+  margin: 0 auto;
+  line-height: 1.7;
+  text-align: center;
+  letter-spacing: -0.48px;
+  padding: 10px;
+}
+
+/* Footer Cat Section */
+.footer-cat-section {
+  background-color: #FFC600;
+  text-align: center;
+  padding: 0;
+}
+
+.footer-cat-image {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 /* Campaign Section */
 .campaign {
-  background-color: #FFC600;
-  padding: 60px 0;
+  background-color: #FFFFFF;
+  padding: 0 30px 40px;
   text-align: center;
 }
 
 .section-title {
-  font-size: 48px;
+  font-size: 83px;
   font-weight: 700;
   color: #121212;
-  margin-bottom: 40px;
+  padding: 20px 10px;
+  letter-spacing: 1.67px;
 }
 
 .campaign-cards {
@@ -203,97 +193,161 @@ img {
   align-items: center;
 }
 
-.campaign-card {
-  max-width: 610px;
+.campaign-link {
+  display: block;
   width: 100%;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 1220px;
 }
 
-/* CTA Section */
-.cta-section {
-  background-color: #FFC600;
-  padding: 60px 0;
+.campaign-card {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* Final CTA Section */
+.final-cta {
+  background-color: #FFFFFF;
+  padding: 0 30px 40px;
   text-align: center;
 }
 
-.cta-title {
-  font-size: 48px;
+.cta-headline {
+  font-size: 83px;
   font-weight: 700;
   color: #121212;
-  margin-bottom: 40px;
+  padding: 10px;
+  letter-spacing: 1.67px;
 }
 
-.cta-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
-  flex-wrap: wrap;
-}
-
-.qr-code img {
-  width: 150px;
-  height: 150px;
-}
-
-.cta-buttons {
-  text-align: center;
-}
-
-/* Footer */
-.footer {
-  background-color: #FFC600;
-  padding: 40px 0 60px;
-  text-align: center;
-}
-
-.footer-cat {
-  max-width: 400px;
-  margin: 0 auto 30px;
-}
-
-.disclaimer {
-  font-size: 14px;
-  color: #000000;
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.8;
+.highlight-number {
+  font-size: 120px;
+  letter-spacing: 6px;
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
-  .hero-image {
-    max-width: 400px;
-  }
-
-  .hero-cat {
-    max-width: 280px;
-  }
-
-  .hero-right {
-    margin-top: -60px;
-  }
-
-  .point-number {
-    font-size: 56px;
-  }
-
-  .point-amount {
-    font-size: 24px;
+@media (max-width: 1024px) {
+  .cta-title {
+    font-size: 36px;
   }
 
   .section-title,
-  .cta-title {
-    font-size: 32px;
+  .cta-headline {
+    font-size: 48px;
   }
 
-  .cta-text {
-    font-size: 16px;
+  .highlight-number {
+    font-size: 72px;
+  }
+
+  .partner-logo {
+    width: 200px;
+    height: 200px;
+  }
+
+  .logo-grid {
+    gap: 40px;
+  }
+
+  .qr-code {
+    width: 180px;
+    height: 180px;
   }
 
   .store-button img {
-    height: 45px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta-title {
+    font-size: 28px;
+  }
+
+  .section-title,
+  .cta-headline {
+    font-size: 32px;
+  }
+
+  .highlight-number {
+    font-size: 48px;
+  }
+
+  .partner-logo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .logo-grid {
+    gap: 30px;
+  }
+
+  .qr-code {
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+  }
+
+  .store-button img {
+    height: 60px;
+  }
+
+  .cta-card {
+    border-radius: 24px;
+    padding: 30px 10px;
+  }
+
+  .download-buttons {
+    gap: 20px;
+  }
+
+  .gift-points {
+    padding: 60px 20px;
+  }
+
+  .gift-banner {
+    margin-bottom: 40px;
+  }
+
+  .logo-grid {
+    margin-bottom: 40px;
+  }
+
+  .disclaimer {
+    font-size: 12px;
+  }
+
+  .app-description {
+    padding: 40px 20px;
+  }
+
+  .section-intro {
+    margin-bottom: 30px;
+  }
+
+  .description-banner {
+    margin-bottom: 30px;
+  }
+
+  .arrow-decoration {
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-top: 40px solid #FDFDFD;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .section-title,
+  .cta-headline {
+    font-size: 24px;
+  }
+
+  .highlight-number {
+    font-size: 36px;
   }
 
   .partner-logo {
@@ -305,72 +359,42 @@ img {
     gap: 20px;
   }
 
-  .cta-content {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .qr-code img {
+  .qr-code {
     width: 120px;
     height: 120px;
-  }
-
-  .footer-cat {
-    max-width: 280px;
-  }
-
-  .disclaimer {
-    font-size: 12px;
-    padding: 0 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-image {
-    max-width: 300px;
-  }
-
-  .hero-cat {
-    max-width: 200px;
-  }
-
-  .hero-right {
-    margin-top: -40px;
-  }
-
-  .point-number {
-    font-size: 48px;
-  }
-
-  .point-amount {
-    font-size: 20px;
-  }
-
-  .point-label {
-    font-size: 14px;
-    padding: 6px 12px;
-  }
-
-  .section-title,
-  .cta-title {
-    font-size: 24px;
-  }
-
-  .store-buttons {
-    flex-direction: column;
-    align-items: center;
+    border-radius: 20px;
   }
 
   .store-button img {
-    height: 40px;
+    height: 45px;
   }
 
-  .partner-logo {
-    width: 80px;
-    height: 80px;
+  .cta-card {
+    border-radius: 16px;
+    padding: 20px 10px;
   }
 
-  .campaign-card {
-    border-radius: 10px;
+  .download-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .disclaimer {
+    font-size: 10px;
+    line-height: 1.6;
+  }
+
+  .arrow-decoration {
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 30px solid #FDFDFD;
+  }
+
+  .campaign {
+    padding: 0 15px 30px;
+  }
+
+  .final-cta {
+    padding: 0 15px 30px;
   }
 }
