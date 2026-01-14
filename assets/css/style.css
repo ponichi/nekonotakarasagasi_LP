@@ -253,12 +253,15 @@ img {
   }
 
   .qr-code {
-    width: 180px;
-    height: 180px;
+    display: none;
   }
 
   .store-button img {
     height: 80px;
+  }
+
+  .store-button .google-play-badge {
+    height: 84px;
   }
 }
 
@@ -285,14 +288,12 @@ img {
     gap: 30px;
   }
 
-  .qr-code {
-    width: 150px;
-    height: 150px;
-    border-radius: 30px;
-  }
-
   .store-button img {
     height: 60px;
+  }
+
+  .store-button .google-play-badge {
+    height: 63px;
   }
 
   .cta-card {
@@ -363,14 +364,12 @@ img {
     gap: 20px;
   }
 
-  .qr-code {
-    width: 120px;
-    height: 120px;
-    border-radius: 20px;
-  }
-
   .store-button img {
     height: 45px;
+  }
+
+  .store-button .google-play-badge {
+    height: 47px;
   }
 
   .cta-card {
