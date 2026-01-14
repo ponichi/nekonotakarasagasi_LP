@@ -87,6 +87,10 @@ img {
   width: auto;
 }
 
+.store-button .google-play-badge {
+  height: 137px;
+}
+
 /* App Description Section */
 .app-description {
   background-color: #FDFDFD;
