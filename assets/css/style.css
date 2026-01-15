@@ -127,12 +127,12 @@ img {
 }
 
 .store-button img {
-  height: 128px;
+  height: clamp(45px, 10vw, 128px);
   width: auto;
 }
 
 .store-button .google-play-badge {
-  height: 137px;
+  height: clamp(47px, 10.7vw, 137px);
 }
 
 /* App Description Section */
@@ -203,7 +203,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 70px;
+  gap: clamp(10px, 5vw, 70px);
   flex-wrap: nowrap;
   margin-bottom: 80px;
 }
@@ -295,14 +295,6 @@ img {
 
 /* Responsive Styles */
 @media (max-width: 1279px) {
-  .partner-logo {
-    max-width: 300px;
-  }
-
-  .logo-grid {
-    gap: 50px;
-  }
-
   .qr-code {
     display: none;
   }
@@ -310,33 +302,9 @@ img {
   .download-buttons {
     flex-wrap: nowrap;
   }
-
-  .store-button img {
-    height: 120px;
-  }
-
-  .store-button .google-play-badge {
-    height: 127px;
-  }
 }
 
 @media (max-width: 799px) {
-  .partner-logo {
-    max-width: 150px;
-  }
-
-  .logo-grid {
-    gap: 20px;
-  }
-
-  .store-button img {
-    height: 60px;
-  }
-
-  .store-button .google-play-badge {
-    height: 63px;
-  }
-
   .cta-card {
     border-radius: 24px;
     padding: 30px 10px;
@@ -392,22 +360,6 @@ img {
 @media (max-width: 480px) {
   .cta-title {
     margin-bottom: 20px;
-  }
-
-  .partner-logo {
-    max-width: 100px;
-  }
-
-  .logo-grid {
-    gap: 10px;
-  }
-
-  .store-button img {
-    height: 45px;
-  }
-
-  .store-button .google-play-badge {
-    height: 47px;
   }
 
   .cta-card {
