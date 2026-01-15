@@ -104,10 +104,11 @@ img {
 }
 
 .cta-title {
-  font-size: 50px;
+  font-size: clamp(16px, 4vw, 50px);
   font-weight: 700;
   color: #121212;
   margin-bottom: 40px;
+  white-space: nowrap;
 }
 
 .download-buttons {
@@ -203,13 +204,14 @@ img {
   justify-content: center;
   align-items: center;
   gap: 70px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-bottom: 80px;
 }
 
 .partner-logo {
-  width: 332px;
-  height: 332px;
+  max-width: 332px;
+  width: 25vw;
+  height: auto;
   object-fit: contain;
 }
 
@@ -243,11 +245,12 @@ img {
 }
 
 .section-title {
-  font-size: 83px;
+  font-size: clamp(24px, 6.5vw, 83px);
   font-weight: 700;
   color: #121212;
   padding: 20px 10px;
   letter-spacing: 1.67px;
+  white-space: nowrap;
 }
 
 .campaign-cards {
@@ -277,40 +280,27 @@ img {
 }
 
 .cta-headline {
-  font-size: 83px;
+  font-size: clamp(24px, 6.5vw, 83px);
   font-weight: 700;
   color: #121212;
   padding: 10px;
   letter-spacing: 1.67px;
+  white-space: nowrap;
 }
 
 .highlight-number {
-  font-size: 120px;
+  font-size: clamp(36px, 9vw, 120px);
   letter-spacing: 6px;
 }
 
 /* Responsive Styles */
 @media (max-width: 1279px) {
-  .cta-title {
-    font-size: 46px;
-  }
-
-  .section-title,
-  .cta-headline {
-    font-size: 76px;
-  }
-
-  .highlight-number {
-    font-size: 110px;
-  }
-
   .partner-logo {
-    width: 300px;
-    height: 300px;
+    max-width: 300px;
   }
 
   .logo-grid {
-    gap: 55px;
+    gap: 50px;
   }
 
   .qr-code {
@@ -331,26 +321,12 @@ img {
 }
 
 @media (max-width: 799px) {
-  .cta-title {
-    font-size: 28px;
-  }
-
-  .section-title,
-  .cta-headline {
-    font-size: 32px;
-  }
-
-  .highlight-number {
-    font-size: 48px;
-  }
-
   .partner-logo {
-    width: 150px;
-    height: 150px;
+    max-width: 150px;
   }
 
   .logo-grid {
-    gap: 30px;
+    gap: 20px;
   }
 
   .store-button img {
@@ -433,26 +409,15 @@ img {
 
 @media (max-width: 480px) {
   .cta-title {
-    font-size: 20px;
     margin-bottom: 20px;
   }
 
-  .section-title,
-  .cta-headline {
-    font-size: 24px;
-  }
-
-  .highlight-number {
-    font-size: 36px;
-  }
-
   .partner-logo {
-    width: 100px;
-    height: 100px;
+    max-width: 100px;
   }
 
   .logo-grid {
-    gap: 20px;
+    gap: 10px;
   }
 
   .store-button img {
