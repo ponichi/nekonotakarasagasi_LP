@@ -514,3 +514,31 @@ img {
     left: calc(50% + 20px);
   }
 }
+
+/* 1280px以上のブレイクポイント */
+@media (min-width: 1280px) {
+  /* ホバーエフェクト */
+  .store-button.hover-enabled {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+  }
+
+  .store-button.hover-enabled:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+
+  .campaign-link.hover-enabled {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: block;
+  }
+
+  .campaign-link.hover-enabled:hover {
+    transform: scale(1.02);
+  }
+
+  .campaign-link.hover-enabled:hover .campaign-card {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  }
+}
