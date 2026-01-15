@@ -26,6 +26,8 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  position: relative;
+  z-index: 5;
 }
 
 /* Hero Section */
@@ -48,6 +50,8 @@ img {
 .download-cta {
   background-color: #359654;
   padding: 0 20px 40px;
+  position: relative;
+  z-index: 20;
 }
 
 .cta-card {
@@ -96,6 +100,8 @@ img {
   background-color: #FDFDFD;
   padding: 80px 30px;
   text-align: center;
+  position: relative;
+  z-index: 10;
 }
 
 .section-intro {
@@ -120,6 +126,8 @@ img {
   height: auto;
   margin: 0 auto;
   margin-top: -25px;
+  position: relative;
+  z-index: 1;
 }
 
 /* Arrow Decoration (Green) */
@@ -129,6 +137,8 @@ img {
   height: auto;
   margin: 0 auto;
   margin-top: -107px;
+  position: relative;
+  z-index: 1;
 }
 
 /* Gift Points Section */
@@ -136,6 +146,8 @@ img {
   background-color: #FFC600;
   padding: 110px 5px 110px;
   text-align: center;
+  position: relative;
+  z-index: 10;
 }
 
 .gift-banner {
@@ -341,6 +353,14 @@ img {
     margin-bottom: 30px;
   }
 
+  .arrow-decoration,
+  .arrow-decoration-green {
+    width: 80px;
+  }
+
+  .arrow-decoration-green {
+    margin-top: -85px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -396,5 +416,14 @@ img {
 
   .final-cta {
     padding: 0 15px 30px;
+  }
+
+  .arrow-decoration,
+  .arrow-decoration-green {
+    width: 60px;
+  }
+
+  .arrow-decoration-green {
+    margin-top: -65px;
   }
 }
