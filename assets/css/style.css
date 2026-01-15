@@ -113,13 +113,20 @@ img {
   margin: 0 auto;
 }
 
-/* Arrow Decoration */
+/* Arrow Decoration (White) */
 .arrow-decoration {
-  width: 0;
-  height: 0;
-  border-left: 90px solid transparent;
-  border-right: 90px solid transparent;
-  border-top: 60px solid #FDFDFD;
+  display: block;
+  width: 100px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: -25px;
+}
+
+/* Arrow Decoration (Green) */
+.arrow-decoration-green {
+  display: block;
+  width: 100px;
+  height: auto;
   margin: 0 auto;
 }
 
@@ -166,13 +173,13 @@ img {
 .footer-cat-section {
   background-color: #FFC600;
   text-align: center;
-  padding: 0;
+  padding: 24px 0 0;
 }
 
 .footer-cat-image {
   max-width: 1280px;
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
 }
 
 /* Campaign Section */
@@ -333,11 +340,6 @@ img {
     margin-bottom: 30px;
   }
 
-  .arrow-decoration {
-    border-left: 60px solid transparent;
-    border-right: 60px solid transparent;
-    border-top: 40px solid #FDFDFD;
-  }
 }
 
 @media (max-width: 480px) {
@@ -385,12 +387,6 @@ img {
   .disclaimer {
     font-size: 10px;
     line-height: 1.6;
-  }
-
-  .arrow-decoration {
-    border-left: 40px solid transparent;
-    border-right: 40px solid transparent;
-    border-top: 30px solid #FDFDFD;
   }
 
   .campaign {
