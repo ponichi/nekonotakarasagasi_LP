@@ -56,7 +56,7 @@ img {
 /* Download CTA Section */
 .download-cta {
   background-color: #359654;
-  padding: 500px 0 90px;
+  padding: 380px 0 60px;
   width: 100%;
   position: relative;
   z-index: 20;
@@ -79,8 +79,8 @@ img {
 
 .cta-deco-series {
   width: var(--cta-series-size);
-  top: 200px;
-  left: calc(50% - 250px);
+  top: 100px;
+  left: calc(50% - 280px);
   z-index: 41;
   transform: translateX(-50%);
 }
