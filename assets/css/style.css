@@ -1,7 +1,7 @@
 /* Reset and Base Styles */
 :root {
   /* CTA装飾画像のサイズ調整 */
-  --cta-cat-size: clamp(280px, 35vw, 450px);
+  --cta-cat-size: clamp(380px, 45vw, 600px);
   --cta-series-size: clamp(300px, 45vw, 660px);
   --cta-gift-size: clamp(150px, 20vw, 280px);
 }
@@ -70,23 +70,26 @@ img {
 }
 
 .cta-deco-cat {
-  top:-320px;
-  right: -10px;
   width: var(--cta-cat-size);
+  top: -400px;
+  left: calc(50% + 250px);
   z-index: 42;
+  transform: translateX(-50%);
 }
 
 .cta-deco-series {
-  top: 60px;
-  left: 3%;
   width: var(--cta-series-size);
+  top: 200px;
+  left: calc(50% - 250px);
   z-index: 41;
+  transform: translateX(-50%);
 }
 
 .cta-deco-gift {
-  top: 200px;
-  right: calc(5% + clamp(200px, 25vw, 350px));
   width: var(--cta-gift-size);
+  top: 40px;
+  left: calc(50% + 240px);
+  transform: translateX(-50%);
   z-index: 45;
 }
 
@@ -369,17 +372,17 @@ img {
 
   .cta-deco-cat {
     top: 50px;
-    right: 2%;
+    left: calc(50% + 180px);
   }
 
   .cta-deco-series {
-    top: 40px;
-    left: 2%;
+    top: 180px;
+    left: calc(50% - 180px);
   }
 
   .cta-deco-gift {
     top: 140px;
-    right: calc(2% + clamp(150px, 22vw, 250px));
+    left: calc(50% + 80px);
   }
 
   .gift-points {
@@ -498,14 +501,16 @@ img {
 
   .cta-deco-cat {
     top: 30px;
+    left: calc(50% + 80px);
   }
 
   .cta-deco-series {
-    top: 20px;
+    top: 120px;
+    left: calc(50% - 80px);
   }
 
   .cta-deco-gift {
     top: 100px;
-    right: calc(2% + clamp(120px, 20vw, 180px));
+    left: calc(50% + 20px);
   }
 }
