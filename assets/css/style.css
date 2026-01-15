@@ -187,7 +187,7 @@ img {
 /* Gift Points Section */
 .gift-points {
   background-color: #FFC600;
-  padding: 110px 5px 400px;
+  padding: clamp(60px, 8.5vw, 110px) 5px clamp(150px, 31vw, 400px);
   text-align: center;
   position: relative;
   z-index: 10;
@@ -230,10 +230,10 @@ img {
 /* Campaign Section */
 .campaign-footer-image {
   display: block;
-  width: 550px;
+  width: clamp(200px, 43vw, 550px);
   height: auto;
   margin: 0 auto;
-  margin-top:-500px;
+  margin-top: clamp(-500px, -39vw, -150px);
   position: relative;
   z-index: 50;
 }
@@ -347,7 +347,8 @@ img {
   }
 
   .gift-points {
-    padding: 60px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .gift-banner {
