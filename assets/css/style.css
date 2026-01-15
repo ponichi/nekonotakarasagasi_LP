@@ -71,24 +71,24 @@ img {
 
 .cta-deco-cat {
   width: var(--cta-cat-size);
-  top: -400px;
-  left: calc(50% + 250px);
+  top: clamp(-400px, -31vw, -200px);
+  left: calc(50% + clamp(80px, 19.5vw, 250px));
   z-index: 42;
   transform: translateX(-50%);
 }
 
 .cta-deco-series {
   width: var(--cta-series-size);
-  top: 100px;
-  left: calc(50% - 280px);
+  top: clamp(50px, 8vw, 100px);
+  left: calc(50% - clamp(80px, 22vw, 280px));
   z-index: 41;
   transform: translateX(-50%);
 }
 
 .cta-deco-gift {
   width: var(--cta-gift-size);
-  top: 40px;
-  left: calc(50% + 240px);
+  top: clamp(20px, 3vw, 40px);
+  left: calc(50% + clamp(20px, 18.75vw, 240px));
   transform: translateX(-50%);
   z-index: 45;
 }
@@ -350,21 +350,6 @@ img {
     padding: 350px 0 60px;
   }
 
-  .cta-deco-cat {
-    top: 50px;
-    left: calc(50% + 180px);
-  }
-
-  .cta-deco-series {
-    top: 180px;
-    left: calc(50% - 180px);
-  }
-
-  .cta-deco-gift {
-    top: 140px;
-    left: calc(50% + 80px);
-  }
-
   .gift-points {
     padding: 60px 20px;
   }
@@ -466,21 +451,6 @@ img {
 
   .download-cta {
     padding: 280px 0 40px;
-  }
-
-  .cta-deco-cat {
-    top: 30px;
-    left: calc(50% + 80px);
-  }
-
-  .cta-deco-series {
-    top: 120px;
-    left: calc(50% - 80px);
-  }
-
-  .cta-deco-gift {
-    top: 100px;
-    left: calc(50% + 20px);
   }
 }
 
