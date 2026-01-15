@@ -105,17 +105,20 @@ img {
 }
 
 .section-intro {
-  max-width: 648px;
+  max-width: 720px;
+  width: 100%;
   margin: 0 auto 60px;
 }
 
 .description-banner {
-  max-width: 930px;
+  max-width: 1040px;
+  width: 100%;
   margin: 0 auto 60px;
 }
 
 .flow-image {
-  max-width: 1138px;
+  max-width: 1240px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -151,7 +154,8 @@ img {
 }
 
 .gift-banner {
-  max-width: 1098px;
+  max-width: 1250px;
+  width: 100%;
   margin: 0 auto 80px;
 }
 
