@@ -134,6 +134,7 @@ img {
   text-align: center;
   position: relative;
   z-index: 10;
+  overflow: visible;
 }
 
 .section-intro {
@@ -286,13 +287,17 @@ img {
 }
 
 /* Responsive Styles */
-@media (max-width: 1279px) {
+@media (max-width: 1280px) {
   .qr-code {
     display: none;
   }
 
   .download-buttons {
     flex-wrap: nowrap;
+  }
+
+  .arrow-decoration-green {
+    margin-top: -80px;
   }
 }
 
@@ -325,6 +330,10 @@ img {
 
   .app-description {
     padding: 40px 20px;
+  }
+
+  .arrow-decoration-green {
+    margin-top: -50px;
   }
 
   .section-intro {
@@ -398,12 +407,5 @@ img {
 
   .campaign-link.hover-enabled:hover .campaign-card {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  }
-}
-
-/* 1280px未満でQRコードを非表示 */
-@media (max-width: 1280px) {
-  .qr-code {
-    display: none;
   }
 }
