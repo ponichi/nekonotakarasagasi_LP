@@ -292,37 +292,41 @@ img {
 /* Responsive Styles */
 @media (max-width: 1279px) {
   .cta-title {
-    font-size: 36px;
+    font-size: 46px;
   }
 
   .section-title,
   .cta-headline {
-    font-size: 48px;
+    font-size: 76px;
   }
 
   .highlight-number {
-    font-size: 72px;
+    font-size: 110px;
   }
 
   .partner-logo {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
   }
 
   .logo-grid {
-    gap: 40px;
+    gap: 55px;
   }
 
   .qr-code {
     display: none;
   }
 
+  .download-buttons {
+    flex-wrap: nowrap;
+  }
+
   .store-button img {
-    height: 80px;
+    height: 120px;
   }
 
   .store-button .google-play-badge {
-    height: 84px;
+    height: 127px;
   }
 }
 
@@ -540,5 +544,12 @@ img {
 
   .campaign-link.hover-enabled:hover .campaign-card {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* 1280px未満でQRコードを非表示 */
+@media (max-width: 1280px) {
+  .qr-code {
+    display: none;
   }
 }
