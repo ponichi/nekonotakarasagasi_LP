@@ -129,8 +129,10 @@ img {
 
 /* App Description Section */
 .app-description {
+  --app-description-padding-top: 80px;
+  --app-description-padding-x: 30px;
   background-color: #FDFDFD;
-  padding: 80px 30px;
+  padding: var(--app-description-padding-top) var(--app-description-padding-x);
   text-align: center;
   position: relative;
   z-index: 10;
@@ -172,7 +174,7 @@ img {
   width: clamp(50px, 8vw, 100px);
   height: auto;
   margin: 0 auto;
-  margin-top: -110px;
+  margin-top: calc(-50px - (var(--app-description-padding-top, 40px) - 40px));
   position: relative;
   z-index: 1;
 }
@@ -296,9 +298,6 @@ img {
     flex-wrap: nowrap;
   }
 
-  .arrow-decoration-green {
-    margin-top: -80px;
-  }
 }
 
 @media (max-width: 799px) {
@@ -329,11 +328,8 @@ img {
   }
 
   .app-description {
-    padding: 40px 20px;
-  }
-
-  .arrow-decoration-green {
-    margin-top: -50px;
+    --app-description-padding-top: 40px;
+    --app-description-padding-x: 20px;
   }
 
   .section-intro {
