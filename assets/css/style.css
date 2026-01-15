@@ -1,7 +1,6 @@
 /* Reset and Base Styles */
 :root {
   /* CTA装飾画像のサイズ調整 */
-  --cta-cat-size: clamp(140px, 45vw, 600px);
   --cta-series-size: clamp(140px, 45vw, 660px);
 }
 
@@ -71,8 +70,8 @@ img {
 }
 
 .cta-deco-cat {
-  width: var(--cta-cat-size);
-  top: clamp(-450px, -40vw, -150px);
+  width: clamp(130px, 43vw, 550px);
+  top: clamp(-350px, -32vw, -100px);
   left: calc(50% + clamp(70px, 26vw, 380px));
   z-index: 42;
   transform: translateX(-50%);
@@ -166,13 +165,13 @@ img {
   z-index: 1;
 }
 
-/* Arrow Decoration (Green) */
+/* Arrow Decoration (Green) - Polygon 2 */
 .arrow-decoration-green {
   display: block;
   width: clamp(50px, 8vw, 100px);
   height: auto;
   margin: 0 auto;
-  margin-top: clamp(-120px, -9vw, -50px);
+  margin-top: -110px;
   position: relative;
   z-index: 1;
 }
