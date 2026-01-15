@@ -56,7 +56,7 @@ img {
 /* Download CTA Section */
 .download-cta {
   background-color: #359654;
-  padding: 380px 0 60px;
+  padding: clamp(200px, 30vw, 380px) 0 clamp(40px, 5vw, 60px);
   width: 100%;
   position: relative;
   z-index: 20;
@@ -346,10 +346,6 @@ img {
     gap: 20px;
   }
 
-  .download-cta {
-    padding: 350px 0 60px;
-  }
-
   .gift-points {
     padding: 60px 20px;
   }
@@ -447,10 +443,6 @@ img {
 
   .campaign {
     padding-top: 80px;
-  }
-
-  .download-cta {
-    padding: 280px 0 40px;
   }
 }
 
