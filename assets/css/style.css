@@ -144,7 +144,7 @@ img {
 /* Gift Points Section */
 .gift-points {
   background-color: #FFC600;
-  padding: 110px 5px 110px;
+  padding: 110px 5px 400px;
   text-align: center;
   position: relative;
   z-index: 10;
@@ -182,23 +182,20 @@ img {
   padding: 10px;
 }
 
-/* Footer Cat Section */
-.footer-cat-section {
-  background-color: #FFC600;
-  text-align: center;
-  padding: 24px 0 0;
-}
-
-.footer-cat-image {
-  max-width: 1280px;
-  width: 100%;
-  margin: auto;
-}
-
 /* Campaign Section */
+.campaign-footer-image {
+  display: block;
+  width: 550px;
+  height: auto;
+  margin: 0 auto;
+  margin-top:-500px;
+  position: relative;
+  z-index: 50;
+}
+
 .campaign {
   background-color: #FFFFFF;
-  padding: 0 30px 40px;
+  padding: 120px 30px 40px;
   text-align: center;
 }
 
@@ -227,6 +224,7 @@ img {
   width: 100%;
   object-fit: contain;
 }
+
 
 /* Final CTA Section */
 .final-cta {
@@ -361,6 +359,10 @@ img {
   .arrow-decoration-green {
     margin-top: -85px;
   }
+
+  .campaign {
+    padding-top: 90px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -425,5 +427,9 @@ img {
 
   .arrow-decoration-green {
     margin-top: -65px;
+  }
+
+  .campaign {
+    padding-top: 80px;
   }
 }
