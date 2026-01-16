@@ -259,13 +259,44 @@ img {
   display: block;
   width: 100%;
   max-width: 1220px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.campaign-link:hover,
+.campaign-link:active {
+  transform: scale(1.02);
 }
 
 .campaign-card {
   width: 100%;
   object-fit: contain;
+  border-radius: 16px;
+  transition: box-shadow 0.3s ease;
 }
 
+.campaign-link:hover .campaign-card,
+.campaign-link:active .campaign-card {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.campaign-link-text {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 16px 40px;
+  background-color: #FFC600;
+  color: #121212;
+  font-size: clamp(18px, 4vw, 28px);
+  font-weight: 700;
+  border-radius: 40px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.campaign-link:hover .campaign-link-text,
+.campaign-link:active .campaign-link-text {
+  background-color: #FFD633;
+  transform: translateY(-3px);
+}
 
 /* Final CTA Section */
 .final-cta {
