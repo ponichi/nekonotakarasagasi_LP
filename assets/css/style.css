@@ -283,10 +283,10 @@ img {
 .campaign-link-text {
   display: inline-block;
   margin-top: 16px;
-  padding: 16px 40px;
+  padding: clamp(10px, 2vw, 16px) clamp(24px, 4vw, 40px);
   background-color: #FFC600;
   color: #121212;
-  font-size: clamp(18px, 4vw, 28px);
+  font-size: clamp(14px, 2.5vw, 24px);
   font-weight: 700;
   border-radius: 40px;
   transition: background-color 0.3s ease, transform 0.3s ease;
