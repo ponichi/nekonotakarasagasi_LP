@@ -27,8 +27,10 @@
 </head>
 
 <body>
-  <!-- Hero Section -->
-  <section class="hero">
+  <!-- Home Page -->
+  <div id="page-home" class="page active">
+    <!-- Hero Section -->
+    <section class="hero">
     <div class="hero-content">
       <img src="assets/img/hero/hero.png" alt="ねこの宝さがし - 放置するだけポイントがたまーる" class="hero-image">
     </div>
@@ -122,14 +124,82 @@
       </div>
     </div>
   </section>
+  </div>
 
-  <!-- Footer -->
-  <footer class="site-footer">
+  <!-- Operator Info Page -->
+  <div id="page-operator-info" class="page">
+    <div class="operator-page-wrapper">
+      <main class="operator-main-content">
+        <!-- Back Button -->
+        <button class="back-button" data-page="home">← 戻る</button>
+
+        <!-- Page Title -->
+        <h1 class="operator-page-title">運営者情報</h1>
+
+        <!-- Info Table -->
+        <div class="operator-info-table">
+          <div class="operator-info-row">
+            <span class="operator-info-label">メディア名</span>
+            <span class="operator-info-value">Zogames</span>
+          </div>
+          <div class="operator-info-row">
+            <span class="operator-info-label">URL</span>
+            <span class="operator-info-value">https://zogames.net</span>
+          </div>
+          <div class="operator-info-row">
+            <span class="operator-info-label">運営者</span>
+            <span class="operator-info-value">株式会社TT</span>
+          </div>
+          <div class="operator-info-row">
+            <span class="operator-info-label">代表取締役</span>
+            <span class="operator-info-value">横山佳史</span>
+          </div>
+          <div class="operator-info-row operator-info-row-address">
+            <span class="operator-info-label">住所</span>
+            <span class="operator-info-value">
+              〒106-0032<br>
+              東京都港区六本木3丁目2-1<br>
+              住友不動産六本木グランドタワー22階
+            </span>
+          </div>
+          <div class="operator-info-row">
+            <span class="operator-info-label">メディア情報</span>
+            <span class="operator-info-value">Webゲーム</span>
+          </div>
+        </div>
+
+        <!-- Contact Button -->
+        <a href="https://app.ttapp.jp/contact/" class="operator-contact-button">お問い合わせフォームはこちら</a>
+      </main>
+
+      <!-- Footer for Operator Page -->
+      <footer class="operator-footer">
+        <div class="operator-footer-logo">
+          <img src="assets/dbbd08c0c40beb330902163b74f1f886fa789552.png" alt="Zogames" class="operator-footer-logo-img">
+        </div>
+        <nav class="operator-footer-nav">
+          <div class="operator-footer-nav-row">
+            <a href="#">利用規約</a>
+            <a href="#">特定商取引法に基づく表記</a>
+            <a href="#" class="spa-link" data-page="operator-info">運営者情報</a>
+          </div>
+          <div class="operator-footer-nav-row">
+            <a href="#">よくあるご質問</a>
+            <a href="#">プライバシーに関する声明</a>
+            <a href="https://app.ttapp.jp/contact/">お問い合わせ</a>
+          </div>
+        </nav>
+        <p class="operator-footer-copyright">Zogames</p>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Footer (Home Page) -->
+  <footer id="footer-home" class="site-footer">
     <nav class="footer-nav">
-      <a href="https://zogames.blog/privacy-policy/" class="footer-link">プライバシーポリシー</a>
-      <a href="https://zogames.blog/operator-info/" class="footer-link">運営者情報</a>
+      <a href="https://app.ttapp.jp/privacy/" class="footer-link">プライバシーポリシー</a>
+      <a href="#" class="footer-link spa-link" data-page="operator-info">運営者情報</a>
     </nav>
-    <p class="footer-copyright">© Zogames.blog.</p>
   </footer>
 
   <script src="assets/js/main.js"></script>
